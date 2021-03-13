@@ -1,0 +1,17 @@
+<div class="col-lg-12 sande">
+  <div class="sande-header">
+    <h3>{{sande.titulo}}</h3>
+    <p>{{sande.designacao}}</p>
+  </div>
+  <img src="{{sande.imagem}}" alt="img">
+  <div class="row coms-revs">
+    <div class="col-lg-6 comentarios">
+      <h5>{{commentTitle}}</h5>
+      <p *ngFor="let comment of sande.comentarios">{{comment}}</p>
+    </div>
+    <div class="col-lg-6 reviews">
+      <h5>{{reviewTitle}}</h5>
+      <p *ngFor="let review of sande.avaliacoes">{{review.comentario}} <strong>{{review.nota}}</strong></p>
+    </div>
+  </div>
+</div>

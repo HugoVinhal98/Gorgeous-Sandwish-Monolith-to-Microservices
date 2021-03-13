@@ -1,0 +1,14 @@
+ContextMap DDDSampleMap {
+	contains Utilizador
+	contains Sandes
+	contains Encomenda
+
+	Utilizador -> Encomenda
+	
+	Sandes -> Encomenda
+	
+}
+
+BoundedContext Utilizador
+BoundedContext Sandes
+BoundedContext Encomenda

@@ -1,0 +1,48 @@
+/*header*/
+header{background:#b63e19; height: 75px;width:100%;;
+    .language{width: 80px; float: right; padding-right: 25px;
+        .languageSwitch{border-radius: 50px; width: 30px; height: 18px; background: transparent; border: 2px solid #fff; cursor: pointer; transition: all ease .2s;
+            &:before{content: ''; border-radius: 50%; left: 2px; width: 10px; height: 10px; background: #fff; position: absolute; top: 50%; transform: translateY(-50%);transition: all ease .2s;}
+            &.isEN{
+                &:before{left:14px}
+                .en{color: #fff;}
+                .pt{color:#b63e19;}
+            }
+            .en{font-size: .75rem; position: absolute;right: -20px; top: 50%; transform: translateY(-50%); color:#b63e19;}
+            .pt{font-size: .75rem; position: absolute;left: -20px; top: 50%; transform: translateY(-50%); color: #fff;}
+        }
+	}
+}
+
+@media (min-width: 768px) {
+    header{
+        .language{width: 160px;}
+    }
+}
+
+@media (min-width: 992px) {
+    header{height: 85px;
+        .language{width: 130px;float: unset; padding-right: 0;}
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+h1{
+    color: white;
+}
+
+hr{
+    width: 70%;
+}
+.sandes{
+    margin-bottom: 100px;
+}

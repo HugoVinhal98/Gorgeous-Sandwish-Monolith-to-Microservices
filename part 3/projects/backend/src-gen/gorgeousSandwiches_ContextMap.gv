@@ -1,0 +1,16 @@
+digraph "ContextMapGraph" {
+graph ["imagepath"="C:\Users\titi1\AppData\Local\Temp\GraphvizJava"]
+"Encomenda" ["margin"="0.3","orientation"="159","shape"="egg","fontsize"="16","style"="bold","label"="Encomenda\n","fontname"="sans-serif"]
+"Sandes" ["margin"="0.3","orientation"="91","shape"="egg","fontsize"="16","style"="bold","label"="Sandes\n","fontname"="sans-serif"]
+"Utilizador" ["margin"="0.3","orientation"="178","shape"="egg","fontsize"="16","style"="bold","label"="Utilizador\n","fontname"="sans-serif"]
+"Sandes" -> "Encomenda" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"Utilizador" -> "Encomenda" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+}

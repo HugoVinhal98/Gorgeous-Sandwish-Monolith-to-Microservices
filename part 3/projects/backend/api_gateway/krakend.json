@@ -1,0 +1,109 @@
+{
+  "version": 2,
+  "extra_config": {
+    "github_com/devopsfaith/krakend-cors": {
+      "allow_origins": [
+        "*"
+      ],
+      "allow_methods": [
+        "GET",
+        "HEAD",
+        "POST"
+      ],
+      "expose_headers": [
+        "Content-Length",
+        "Content-Type"
+      ],
+      "max_age": "12h",
+      "allow_headers": [
+        "Accept-Language"
+      ],
+      "allow_credentials": false
+    }
+  },
+  "timeout": "3000ms",
+  "cache_ttl": "300s",
+  "output_encoding": "json",
+  "name": "Gateway",
+  "port": 7002,
+  "endpoints": [
+    {
+      "endpoint": "/sanduichesDetalhadas",
+      "method": "GET",
+      "backend": [
+        {
+          "is_collection": true,
+          "url_pattern": "/sandesDetails",
+          "host": [
+            "http://host.docker.internal:8030"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/sanduiches",
+      "method": "GET",
+      "backend": [
+        {
+          "is_collection": true,
+          "url_pattern": "/sandes",
+          "host": [
+            "http://host.docker.internal:8030"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/utilizadores",
+      "method": "GET",
+      "backend": [
+        {
+          "is_collection": true,
+          "url_pattern": "/utilizador",
+          "host": [
+            "http://host.docker.internal:8010"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/encomendas",
+      "method": "GET",
+      "backend": [
+        {
+          "is_collection": true,
+          "url_pattern": "/encomenda",
+          "host": [
+            "http://host.docker.internal:8020"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/comentarios",
+      "method": "GET",
+      "backend": [
+        {
+          "is_collection": true,
+          "url_pattern": "/comentario",
+          "host": [
+            "http://host.docker.internal:8030"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/avaliacoes",
+      "method": "GET",
+      "backend": [
+        {
+          "is_collection": true,
+          "url_pattern": "/avaliacao",
+          "host": [
+            "http://host.docker.internal:8030"
+          ]
+        }
+      ]
+    }
+  ]
+}
