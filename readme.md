@@ -1,20 +1,10 @@
-# Repository for Project -- Part 2 and Part 3 (group)
+# Gorgeous-Sandwish-Monolith-to-Microservices
 
-The goal of this repository is to serve as a template for Part 2 and Part 3 of the project developed during the ARQSOFT course of the MEI Program, edition 2020/21.
+This project was developed during my first semester in the Masters degree in Software Engineering.
 
-**The instructions of your teachers will always prevail over what is stated in this readme file.**
+As explained in the "About" description, this project/class main purpose was to initially develop a Monolithic Application using Spring Boot and on a second stage, to migrate the developed Service to several microservices. Another big concern for the development of this project was the concurrent writing of documentation on the decision making that the team followed using a set of patterns and best practices learned throughout the curricular unit.
 
-## Folders for Each Task
+- Part 2 -> Monolith and correspondent documentation.
+- Part 3 -> Microservices and correspondent documentation.
 
-Place the artifacts for each part in the specific folder ("part 2" or "part 3"). Create and manage subfolders as necessary.
-
-**Note:** If, for some reason, you need to bypass these guidelines, please ask your laboratory teacher for directions.  **Always** state the exceptions in your commits and issues in bitbucket.
-
-
-## Issues and Commits
-
-Each team will usually have a clone of this repository in bitbucket.
-
-It is good practice to create an **Issue** in bitbucket for each activity and close the issue when finished. Refer to the issue number in each commit.
-
-For each deadline/submission of your task/project, you should also **create a tag** in the repository.
+**Heads up** - All of the documentation is written in Portuguese, my mother tongue.
